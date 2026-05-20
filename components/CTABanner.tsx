@@ -14,7 +14,7 @@ export default function CTABanner() {
           gratis audit is binnen 48 uur klaar.
         </p>
         <a
-          href="mailto:hallo@theloopmarketing.nl"
+          href="mailto:info@theloopmarketingagency.nl"
           className="inline-block bg-white text-[#0057FF] font-syne font-bold text-base px-10 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200"
         >
           Start het Gesprek

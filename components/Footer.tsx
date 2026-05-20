@@ -33,15 +33,15 @@ const navCols = [
     heading: "Contact",
     links: [
       "Gratis Audit",
-      "hallo@theloopmarketingagency.nl",
+      "info@theloopmarketingagency.nl",
       "+31 6 84 909 371",
     ],
   },
 ];
 
 const socials = [
-  { icon: Instagram, label: "Instagram" },
-  { icon: TikTokIcon, label: "TikTok" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/theloopmarketingagency" },
+  { icon: TikTokIcon, label: "TikTok", href: "https://www.tiktok.com/@theloopmarketingagency" },
 ];
 
 export default function Footer() {
@@ -68,10 +68,12 @@ export default function Footer() {
             </p>
             {/* Socials */}
             <div className="flex gap-3 mt-6">
-              {socials.map(({ icon: Icon, label }) => (
+              {socials.map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#0057FF] hover:border-[#0057FF] transition-all duration-200"
                 >
