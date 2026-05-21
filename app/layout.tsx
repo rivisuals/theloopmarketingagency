@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
+import TikTokPixel from "@/components/TikTokPixel";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -44,7 +45,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className={`${syne.variable} ${dmSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <TikTokPixel />
+        {children}
+      </body>
     </html>
   );
 }
