@@ -114,17 +114,21 @@ export default function Footer() {
             © 2025 TheLoop Marketing Agency. Alle rechten voorbehouden.
           </p>
           <div className="flex gap-6">
-            {["Privacybeleid", "Algemene Voorwaarden", "Cookiebeleid"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="font-dm text-xs text-white/40 hover:text-white/70 transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              )
-            )}
+            <a
+              href="/privacy"
+              className="font-dm text-xs text-white/40 hover:text-white/70 transition-colors duration-200"
+            >
+              Privacybeleid
+            </a>
+            {["Algemene Voorwaarden", "Cookiebeleid"].map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="font-dm text-xs text-white/40 hover:text-white/70 transition-colors duration-200"
+              >
+                {item}
+              </a>
+            ))}
           </div>
         </div>
       </div>
